@@ -1,35 +1,7 @@
 // Menunggu sampai semua konten HTML dimuat
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ===============================================
-    // KODE UNTUK SWITCHER FOTO 'REAL/DIGITAL'
-    // ===============================================
-    const realButton = document.getElementById('real-button');
-    const digitalButton = document.getElementById('digital-button');
-    const profileImage = document.getElementById('profile-image');
-
-    // Tentukan path gambar Anda
-    const realImagePath = 'assets/img/pf.jpg'; // GANTI INI dengan foto asli Anda
-    const digitalImagePath = 'assets/img/pfp.png'; // GANTI INI dengan foto digital/avatar Anda
-
-    // Cek apakah elemennya ada sebelum menambahkan listener
-    if (realButton && digitalButton && profileImage) {
-        realButton.addEventListener('click', () => {
-            profileImage.src = realImagePath;
-            realButton.classList.add('text-white');
-            realButton.classList.remove('text-gray-400');
-            digitalButton.classList.add('text-gray-400');
-            digitalButton.classList.remove('text-white');
-        });
-
-        digitalButton.addEventListener('click', () => {
-            profileImage.src = digitalImagePath;
-            digitalButton.classList.add('text-white');
-            digitalButton.classList.remove('text-gray-400');
-            realButton.classList.add('text-gray-400');
-            realButton.classList.remove('text-white');
-        });
-    }
+    
 
     // ===============================================
     // KODE BARU UNTUK ANIMASI FADE-IN SAAT SCROLL
